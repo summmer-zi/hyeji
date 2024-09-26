@@ -1,14 +1,25 @@
 // script.js
-function disableScrollEffectsOnMobile() {
-  if (window.innerWidth < 700) {
-    document.querySelectorAll('[data-scroll]').forEach(function(el) {
-      el.removeAttribute('data-scroll');
-    });
-  }
-}
-
-window.addEventListener('resize', disableScrollEffectsOnMobile);
-disableScrollEffectsOnMobile(); // 초기 로드 시에도 적용
+u = {
+  el: document,
+  elMobile: document,
+  name: "scroll",
+  offset: 0,
+  repeat: !1,
+  smooth: !0, // 모바일에서도 부드러운 스크롤 활성화
+  smoothMobile: !0, // 모바일에서도 부드러운 스크롤 활성화
+  direction: "vertical",
+  inertia: 1,
+  class: "is-inview",
+  scrollbarClass: "c-scrollbar",
+  scrollingClass: "has-scroll-scrolling",
+  draggingClass: "has-scroll-dragging",
+  smoothClass: "has-scroll-smooth",
+  initClass: "has-scroll-init",
+  getSpeed: !1,
+  getDirection: !1,
+  firefoxMultiplier: 50,
+  touchMultiplier: 2
+};
 
 !(function() {
   "use strict";
