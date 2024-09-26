@@ -1241,7 +1241,7 @@ html.is-ready .c-header_logo {
 
 .c-reading-block_item.-first {
   top: 30%;
-  left: 400px;
+  right: 0px;
 }
 .c-reading-block_item.-second {
   top: 40%;
@@ -1250,6 +1250,54 @@ html.is-ready .c-header_logo {
 .c-reading-block_item.-third {
   top: 50%;
   left: 200px;
+}
+
+
+
+/* style.css */
+
+/* 모바일 화면에서 중앙 정렬 */
+@media (max-width: 699px) {
+  .c-reading-block_item {
+    position: relative; /* 고정 위치 제거 */
+    left: 50%; /* 중앙으로 이동 */
+    transform: translateX(-50%); /* 중앙 정렬 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    font-size: 1.5rem; /* 텍스트 크기 조정 */
+  }
+
+  /* 스크롤 효과가 모바일에서는 작동하지 않도록 설정 */
+  [data-scroll] {
+    transform: none !important;
+  }
+}
+
+/* 태블릿 화면에서 중앙 정렬 */
+@media (min-width: 700px) and (max-width: 999px) {
+  .c-reading-block_item {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+/* 데스크탑 화면에서는 원래 위치에 있게 유지 */
+@media (min-width: 1000px) {
+  .c-reading-block_item {
+    position: absolute;
+    font-size: 4.375rem; /* 원래 텍스트 크기 */
+    /* 기존 위치를 유지하는 스타일 */
+  }
+}
+
+
+
+
+.c-reading-block_item.-resume {
+  top: 70%; /* 추가한 링크의 위치 조정 */
+  left: 0; /* 왼쪽 정렬 */
 }
   
 .c-project-block {

@@ -1,3 +1,15 @@
+// script.js
+function disableScrollEffectsOnMobile() {
+  if (window.innerWidth < 700) {
+    document.querySelectorAll('[data-scroll]').forEach(function(el) {
+      el.removeAttribute('data-scroll');
+    });
+  }
+}
+
+window.addEventListener('resize', disableScrollEffectsOnMobile);
+disableScrollEffectsOnMobile(); // 초기 로드 시에도 적용
+
 !(function() {
   "use strict";
   function s(t, e) {
