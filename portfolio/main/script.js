@@ -1,33 +1,3 @@
-// script.js에서 설정 확인
-u = {
-  el: document,
-  elMobile: document,
-  name: "scroll",
-  offset: 0,
-  repeat: !1,
-  smooth: !0, // 부드러운 스크롤 활성화
-  smoothMobile: !0, // 모바일에서도 부드러운 스크롤 활성화
-  direction: "vertical",
-  inertia: 1,
-  class: "is-inview",
-  scrollbarClass: "c-scrollbar",
-  scrollingClass: "has-scroll-scrolling",
-  draggingClass: "has-scroll-dragging",
-  smoothClass: "has-scroll-smooth",
-  initClass: "has-scroll-init",
-  getSpeed: !1,
-  getDirection: !1,
-  firefoxMultiplier: 50,
-  touchMultiplier: 2
-};
-
-// 스크롤 초기화 코드 확인
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true,
-  smoothMobile: true, // 모바일에서 부드러운 스크롤을 위해 추가
-});
-scroll.init();
 
 
 !(function() {
