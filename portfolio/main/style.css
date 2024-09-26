@@ -1251,16 +1251,6 @@ html.is-ready .c-header_logo {
   top: 50%;
   left: 200px;
 }
-
-
-
-
-
-
-.c-reading-block_item.-resume {
-  top: 70%; /* 추가한 링크의 위치 조정 */
-  left: 0; /* 왼쪽 정렬 */
-}
   
 .c-project-block {
   margin-bottom: 10rem;
