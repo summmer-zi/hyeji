@@ -1,3 +1,15 @@
+document.addEventListener('scroll', function() {
+  const readingSection = document.querySelector('.c-section_infos_inner'); // READINGS 섹션 선택
+  const scrollPosition = window.scrollY; // 현재 스크롤 위치
+  
+  // 특정 스크롤 위치에서 READINGS 섹션을 더 빨리 숨김
+  if (scrollPosition > 200) { // 스크롤이 200px 이상일 때 사라짐
+      readingSection.style.opacity = '0'; // 섹션이 더 빨리 사라지게 설정
+      readingSection.style.transition = 'opacity 1s ease'; // 부드럽게 사라지도록 애니메이션 설정
+  } else {
+      readingSection.style.opacity = '1'; // 다시 보이게 설정
+  }
+});
 
 !(function() {
   "use strict";

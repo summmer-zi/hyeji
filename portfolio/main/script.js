@@ -1,4 +1,21 @@
 
+// 모든 섹션에 애니메이션 효과를 적용
+document.addEventListener('scroll', function() {
+  const sections = document.querySelectorAll('.c-section_infos_inner, .c-project-block'); // READINGS, PROJECTS, EXERCISES 섹션
+  const scrollPosition = window.scrollY;
+
+  sections.forEach((section) => {
+      if (scrollPosition > 100 && scrollPosition < 700) { // 스크롤 위치에 따라 애니메이션 효과 적용
+          section.style.opacity = '1';
+          section.style.transform = 'translateY(0)';
+          section.style.transition = 'opacity 1s ease, transform 1s ease';
+      } else {
+          section.style.opacity = '0';
+          section.style.transform = 'translateY(20px)';
+      }
+  });
+});
+
 
 !(function() {
   "use strict";
