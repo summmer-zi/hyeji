@@ -1,86 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
 /* Storybook 섹션 스타일 */
 .storybook-section {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 50px 0;
-  width: 90%;
-  max-width: 1300px;
-  margin: 0 auto; /* 가운데 정렬 */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .storybook-left {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  margin-right: 20px; /* 오른쪽 이미지와 간격 조정 */
-  align-self: flex-end; /* 오른쪽 이미지 하단에 맞추기 위해 하단 정렬 */
+  flex: 0 0 200px;
 }
 
 .storybook-left img {
-  width: 200px; /* 작은 이미지 */
-  height: 200px;
-  border-radius: 20px; /* 둥근 모서리 */
-  object-fit: cover;
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 20px !important;
+  object-fit: cover !important;
   transition: transform 0.3s ease, border-radius 0.3s ease;
 }
 
 .storybook-right {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
+  flex: 1;
 }
 
 .storybook-right img {
-  width: 800px; /* 큰 이미지 */
-  height: 500px;
-  border-radius: 20px; /* 둥근 모서리 */
-  object-fit: cover;
+  width: 800px !important;
+  height: 500px !important;
+  border-radius: 20px !important;
+  object-fit: cover !important;
   transition: transform 0.3s ease, border-radius 0.3s ease;
 }
 
-.storybook-left:hover img, .storybook-right:hover img {
-  transform: scale(1.05); /* 이미지 확대 */
-  border-radius: 20px; /* 둥근 모서리 유지 */
-}
 
-.project-caption {
-  text-align: left;
-  font-size: 16px;
-  width: 800px; /* 오른쪽 큰 이미지와 동일한 너비 */
-  margin-top: 10px; /* 이미지와 캡션 간 간격 */
-}
 
-.project-caption h3 {
-  font-size: 18px;
-  margin: 0;
-}
-
-.project-caption p {
-  font-size: 14px;
-  color: #666;
-  margin: 5px 0 0;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0);
-  transition: background-color 0.3s ease, border-radius 0.3s ease;
-  border-radius: 20px; /* 오버레이에도 둥근 모서리 적용 */
-  pointer-events: none; /* 오버레이가 클릭 이벤트를 차단하지 않도록 설정 */
-}
-
-/* 마우스 오버 시 오버레이 효과 */
-.storybook-left:hover .overlay, .storybook-right:hover .overlay {
-  background-color: rgba(255, 255, 255, 0.3); /* 흰색 오버레이 */
-  border-radius: 20px; /* 확대될 때도 둥근 모서리 유지 */
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 html {
   line-height: 1.15;
