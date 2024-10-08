@@ -2,18 +2,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 
+/* 공통 섹션 스타일 */
+.storybook-section, .poster-section, .interaction-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
+/* 이미지 컨테이너 스타일 */
+.storybook-image-container, .poster-image-container, .interaction-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+}
+
+/* 이미지 스타일 */
+.storybook-image-container img, .poster-image-container img, .interaction-image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+/* 마우스 오버 시 확대 효과 */
+.storybook-image-container:hover, .poster-image-container:hover, .interaction-image-container:hover {
+  transform: scale(1.05);
+}
+
+/* 오버레이 효과 */
+.storybook-image-container::before, .poster-image-container::before, .interaction-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.storybook-image-container:hover::before, .poster-image-container:hover::before, .interaction-image-container:hover::before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 캡
+
+션과 아이콘 스타일 */
+.project-caption-container {
+  display: flex;
+  justify-content: space-between; /* 왼쪽에 캡션, 오른쪽에 아이콘 */
+  align-items: center;
+  width: 100%;
+}
+
+.project-caption {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.project-icon {
+  font-size: 24px;
+  text-align: right;
+}
+
+/* 모바일에서 정사각형 유지 */
+@media (max-width: 768px) {
+  .storybook-image-container img, .poster-image-container img, .interaction-image-container img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+  }
+
+  .project-caption {
+      width: 300px;
+  }
+}
+
+
+
+.project-caption {
+  text-align: left;
+  font-size: 16px;
+  width: 800px; /* 오른쪽 큰 이미지와 동일한 너비 */
+  margin-top: 20px; /* 이미지와 캡션 간 간격 추가 */
+}
+
+.project-caption h3 {
+  font-size: 18px;
+  margin-bottom: 10px; /* 제목과 설명 간의 간격 추가 */
+}
+
+.project-caption p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px; /* 제목과 설명 사이에 간격 추가 */
+}
 
 /* Storybook 섹션 스타일 */
 .storybook-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; /* 상단 정렬을 기본으로 설정 */
+  width: 100%; /* 전체 너비 사용 */
   padding: 20px 0;
 }
 
 .storybook-left {
   flex: 0 0 200px;
+  align-self: flex-end; /* 왼쪽 이미지를 오른쪽 이미지의 하단에 맞추기 */
 }
 
 .storybook-left img {
