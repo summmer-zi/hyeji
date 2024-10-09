@@ -1,4 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+
+/* 기본적으로 타이틀과 이미지 사이 간격 제거 */
+.c-project-block {
+  margin-bottom: 0; /* 타이틀과 이미지 간 간격 제거 */
+}
+
+.storybook-section {
+  margin-top: 0; /* 섹션 상단 간격 제거 */
+}
+
+.storybook-image-container {
+  margin-top: 0; /* 이미지 컨테이너 상단 간격 제거 */
+}
+
+/* 모바일 뷰에서 타이틀과 이미지 사이 간격을 완전히 없앰 */
+@media (max-width: 768px) {
+  .c-project-block {
+    margin-bottom: 0; /* 타이틀과 이미지 간격 0 */
+  }
+
+  .storybook-section {
+    margin-top: 0; /* 섹션 상단 간격 제거 */
+  }
+
+  .storybook-image-container {
+    margin-top: 0; /* 이미지 상단 간격 제거 */
+  }
+
+  /* 모바일에서 스크롤 관련 속성 제거 */
+  .c-project-block_index,
+  .c-project-block_title,
+  .storybook-section [data-scroll] {
+    transform: none !important; /* 스크롤 모션 제거 */
+    transition: none !important; /* 트랜지션 제거 */
+  }
+}
+
+
 /* 타이틀과 이미지 사이의 간격을 모두 제거 */
 .c-project-block {
   margin-bottom: 0;  /* 타이틀과 이미지 사이의 간격 제거 */
