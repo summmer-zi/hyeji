@@ -1,4 +1,24 @@
 document.addEventListener('scroll', function() {
+  const projectBlocks = document.querySelectorAll('.c-project-block');
+  
+  projectBlocks.forEach(block => {
+      const rect = block.getBoundingClientRect();
+      const image = block.nextElementSibling.querySelector('img'); // Finds the image below the project title
+      const imageRect = image.getBoundingClientRect();
+
+      // Check if the title has moved past the desired position (2cm = approx. 75px in most cases)
+      if (rect.bottom > imageRect.top - 75) {
+          block.style.transform = `translateY(${imageRect.top - 75}px)`;
+          block.style.position = 'absolute';  // You could also use fixed positioning for different effects
+      } else {
+          block.style.transform = '';  // Reset when it's not at the stopping point
+          block.style.position = '';   // Reset to normal flow
+      }
+  });
+});
+
+
+document.addEventListener('scroll', function() {
   const readingSection = document.querySelector('.c-section_infos_inner'); // READINGS 섹션 선택
   const scrollPosition = window.scrollY; // 현재 스크롤 위치
   

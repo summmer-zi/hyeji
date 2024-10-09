@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
-
 
 /* 공통 섹션 스타일 */
 .storybook-section, .poster-section, .interaction-section {
@@ -19,19 +17,21 @@
   border-radius: 20px;
   transition: transform 0.3s ease;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center; /* 이미지를 가운데 정렬 */
 }
 
 /* 이미지 스타일 */
 .storybook-image-container img, .poster-image-container img, .interaction-image-container img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 100%; /* 화면의 전체 너비를 차지 */
+  height: auto; /* 비율을 유지하면서 높이 자동 조정 */
   border-radius: 20px;
   transition: transform 0.3s ease, border-radius 0.3s ease;
 }
 
 /* 마우스 오버 시 확대 효과 */
-.storybook-image-container:hover, .poster-image-container:hover, .interaction-image-container:hover {
+.storybook-image-container:hover img, .poster-image-container:hover img, .interaction-image-container:hover img {
   transform: scale(1.05);
 }
 
@@ -52,9 +52,7 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* 캡
-
-션과 아이콘 스타일 */
+/* 캡션과 아이콘 스타일 */
 .project-caption-container {
   display: flex;
   justify-content: space-between; /* 왼쪽에 캡션, 오른쪽에 아이콘 */
@@ -66,24 +64,25 @@
   text-align: left;
   font-size: 16px;
   margin-top: 10px;
-  width: 90%;
+  width: auto; /* 캡션의 너비를 자동으로 설정 */
 }
 
 .project-icon {
   font-size: 24px;
   text-align: right;
+  margin-left: auto; /* 아이콘을 오른쪽으로 정렬 */
 }
 
-/* 모바일에서 정사각형 유지 */
+/* 모바일에서 이미지가 전체 너비를 차지하도록 조정 */
 @media (max-width: 768px) {
   .storybook-image-container img, .poster-image-container img, .interaction-image-container img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
+      width: 100%; /* 모바일에서도 화면의 전체 너비를 차지 */
+      height: auto; /* 비율을 유지하며 자동으로 높이 설정 */
+      object-fit: cover; /* 이미지를 잘라서 비율에 맞게 채우기 */
   }
 
   .project-caption {
-      width: 300px;
+      width: 100%; /* 모바일에서도 캡션이 전체 너비를 차지 */
   }
 }
 
