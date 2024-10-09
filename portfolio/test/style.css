@@ -1,4 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+/* 타이틀과 이미지 사이의 간격을 모두 제거 */
+.c-project-block {
+  margin-bottom: 0;  /* 타이틀과 이미지 사이의 간격 제거 */
+}
+
+/* 각 섹션의 상단 마진을 줄임 */
+.storybook-section,
+.poster-section,
+.interaction-section {
+  margin-top: 0;  /* 섹션의 상단 마진을 제거 */
+}
+
+/* 모바일에서 추가적으로 간격을 좁히기 위한 스타일 */
+@media (max-width: 768px) {
+  .c-project-block {
+    margin-bottom: 5px;  /* 모바일에서 타이틀과 이미지 간 간격을 더 좁힘 */
+  }
+
+  .storybook-section,
+  .poster-section,
+  .interaction-section {
+    margin-top: 0px;  /* 모바일에서 섹션의 상단 간격도 줄임 */
+  }
+}
 
 /* 공통 섹션 스타일 */
 .storybook-section, .poster-section, .interaction-section {
@@ -6,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 /* 이미지 컨테이너 스타일 */
