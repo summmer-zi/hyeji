@@ -16,37 +16,61 @@
   margin-top: 0; /* 이미지 컨테이너 상단 간격 제거 */
 }
 
-/* 모바일 뷰에서 간격을 완전히 없앰 */
+
+
+/* 모바일 뷰에서 타이틀과 이미지 사이 간격을 완전히 제거 */
 @media (max-width: 768px) {
-  /* 타이틀과 이미지 사이 간격 완전 제거 */
+  /* 타이틀과 이미지 사이의 모든 간격 제거 */
   .c-project-block {
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    display: block; /* Safari에서도 명시적으로 block 적용 */
+    -webkit-display: block; /* Safari 호환 */
   }
 
   .storybook-section {
     margin-top: 0 !important;
+    padding-top: 0 !important;
+    display: block; /* Safari 호환성 강화를 위해 display 명시 */
+    -webkit-display: block;
   }
 
   .storybook-image-container {
     margin-top: 0 !important;
+    padding-top: 0 !important;
+    display: block;
+    -webkit-display: block; /* Safari 호환성 */
   }
 
-  /* 타이틀과 이미지에 불필요한 마진이나 패딩 제거 */
+  /* 타이틀과 이미지에 적용된 추가 마진과 패딩 제거 */
   .c-project-block_index, .c-project-block_title {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;  /* Safari에서 명시적으로 block 적용 */
+    -webkit-display: block;
   }
 
-  /* 모바일에서 스크롤 효과 제거 */
+  /* 이미지와 타이틀 사이의 간격 제거 */
+  .storybook-image-container img {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+    -webkit-display: block; /* Safari 호환성 */
+  }
+
+  /* 섹션 내부 여백도 제거 */
+  .storybook-section {
+    padding: 0 !important;
+    display: block;
+    -webkit-display: block; /* Safari 호환성 */
+  }
+
+  /* Safari에서 스크롤 관련 효과 제거 */
   [data-scroll] {
     transform: none !important;
+    -webkit-transform: none !important; /* Safari 호환 */
     transition: none !important;
-  }
-
-  /* 이미지와 타이틀 사이에 여백 없애기 */
-  .storybook-image-container img {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+    -webkit-transition: none !important; /* Safari 호환 */
   }
 }
 
