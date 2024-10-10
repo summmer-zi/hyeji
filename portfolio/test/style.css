@@ -3,6 +3,16 @@
 
 
 
+/* 모바일 뷰에서 더 많은 간격을 주는 경우 */
+@media (max-width: 768px) {
+  .storybook-section,
+  .poster-section,
+  .interaction-section {
+    margin-bottom: 60px !important; /* 모바일에서 더 넓은 간격을 강제로 설정 */
+  }
+}
+
+
 /* 기본적으로 타이틀과 이미지 사이의 간격 제거 */
 .c-project-block {
   margin-bottom: 0; /* 타이틀과 이미지 간 간격 제거 */
