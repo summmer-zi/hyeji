@@ -22,7 +22,7 @@
 @media (max-width: 768px) {
   /* 타이틀과 이미지 사이의 모든 간격 제거 */
   .c-project-block {
-    margin-bottom: 0 !important;
+    margin-bottom: 20px !important;
     padding-bottom: 0 !important;
     display: block; /* Safari에서도 명시적으로 block 적용 */
     -webkit-display: block; /* Safari 호환 */
@@ -36,7 +36,7 @@
   }
 
   .storybook-image-container {
-    margin-top: 0 !important;
+    margin-top: 10px !important;
     padding-top: 0 !important;
     display: block;
     -webkit-display: block; /* Safari 호환성 */
