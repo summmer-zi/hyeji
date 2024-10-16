@@ -8,7 +8,7 @@ document.addEventListener('scroll', function() {
       const rectImage = image.getBoundingClientRect();
 
       // 스크롤 정지 포인트를 이미지 위 75px까지만 제한
-      const stopPoint = rectImage.top - 80;  // 여기서 75px이 2cm에 해당
+      const stopPoint = rectImage.top - 20;  // 여기서 75px이 2cm에 해당
 
       if (rectTitle.bottom < stopPoint) {
           title.style.transform = `translateY(${stopPoint - rectTitle.bottom}px)`;
@@ -17,6 +17,8 @@ document.addEventListener('scroll', function() {
       }
   });
 });
+
+
 
 
 
