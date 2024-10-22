@@ -1,3 +1,5 @@
+
+
 document.addEventListener('scroll', function() {
   const projectBlocks = document.querySelectorAll('.c-project-block');
   

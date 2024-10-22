@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 
+a:link, a:visited {
+  color: inherit; /* 기본 텍스트 색상을 유지 */
+  text-decoration: none; /* 밑줄을 없앰 */
+}
+
+a:hover, a:focus {
+  color: inherit; /* 호버 시에도 기본 색상 유지 */
+  text-decoration: none; /* 호버 시에도 밑줄 없음 */
+}
+
+a:active {
+  color: inherit; /* 클릭 중에도 기본 색상 유지 */
+  text-decoration: none; /* 클릭 중에도 밑줄 없음 */
+}
 
 
+
+/* About Me 제목과 아래 텍스트 사이 간격 조정 */
+.c-section_infos_inner h3 {
+  margin-bottom: 20px; /* 간격을 조정하고 필요한 만큼 값을 늘리세요 */
+}
+
+/* 텍스트 영역의 스타일을 추가로 조정하고 싶다면 */
+.c-sections_infos_text {
+  padding-top: 20px; /* 제목과 텍스트 사이 여백 추가 */
+}
 
 
 
