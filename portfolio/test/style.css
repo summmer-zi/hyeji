@@ -659,7 +659,7 @@ h1 {
 @media (max-width: 699px) {
   .o-h1,
   h1 {
-    font-size: 12vw;
+    font-size: 16vw;
   }
 }
 @media (min-width: 700px) and (max-width: 1599px) {

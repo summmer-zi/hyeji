@@ -21,9 +21,6 @@ document.addEventListener('scroll', function() {
 });
 
 
-
-
-
 !(function() {
   "use strict";
   function s(t, e) {
