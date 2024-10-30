@@ -1203,6 +1203,19 @@ html.is-ready .o-layout_item:nth-child(2) .c-header_heading_label {
     height: 8.75rem;
   }
 }
+
+@media (max-width: 699px) {
+  .c-summary_text {
+    margin-top: 3rem;
+    margin-bottom: 6rem; /* 하단 간격을 넓힘 */
+  }
+
+  .c-summary_list {
+    margin-top: 1rem; /* 상단 간격 조정 */
+  }
+}
+
+
 .c-header_logo svg {
   display: block;
   width: 100%;
