@@ -1205,6 +1205,17 @@ html.is-ready .o-layout_item:nth-child(2) .c-header_heading_label {
 }
 
 @media (max-width: 699px) {
+  .c-summary_text,
+  .c-sections_infos_text p, .c-sections_infos_text u-text p,
+  .c-cta_content_text h4 {
+    font-size: 1.12rem !important; /* 필요에 따라 크기 조정 */
+    line-height: 1.5 !important; /* 가독성을 위한 줄 간격 설정 */
+  }
+}
+
+
+
+@media (max-width: 699px) {
   .c-summary_text {
     margin-top: 3rem;
     margin-bottom: 6rem; /* 하단 간격을 넓힘 */
