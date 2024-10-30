@@ -1607,11 +1607,21 @@ html.is-ready .c-header_logo {
     font-size: 2rem;
   }
 }
+
+.c-cta_content_text a {
+  overflow-wrap: break-word; /* 자연스러운 줄바꿈 유도 */
+  word-break: break-word;
+  white-space: normal;
+  hyphens: auto; /* 줄바꿈 시 하이픈 추가 (선택 사항) */
+}
+
 .c-cta_line {
-  margin: 0;
+  margin-top: 0; /* 상단 간격 제거 */
+  margin-bottom: 0.5rem; /* 선 아래에 여백을 추가하고 싶다면 설정 */
   transform: scaleX(0);
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .c-cta_line.-margin {
   margin-bottom: 30px;
 }
@@ -1623,6 +1633,7 @@ html.is-ready .c-header_logo {
 }
 .c-cta_content_text {
   max-width: 520px;
+  margin-bottom: 0.5rem; /* 아래 요소와의 간격을 줄임 */
 }
 .c-cta_content_text > * {
   opacity: 0;
@@ -1631,7 +1642,7 @@ html.is-ready .c-header_logo {
     transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .c-cta_content_text > :not(:first-child) {
-  margin-top: 1.875rem;
+  margin-top: 0.5rem;
 }
 .c-cta_content_text.is-inview > * {
   opacity: 1;
@@ -1654,6 +1665,8 @@ html.is-ready .c-header_logo {
 .c-cta_content_text a:hover {
   color: white;
 }
+
+
 
 .u-2\:1:before {
   padding-bottom: 50%;
