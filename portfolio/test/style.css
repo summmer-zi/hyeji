@@ -1608,19 +1608,6 @@ html.is-ready .c-header_logo {
   }
 }
 
-.c-cta_content_text a {
-  overflow-wrap: break-word; /* 자연스러운 줄바꿈 유도 */
-  word-break: break-word;
-  white-space: normal;
-  hyphens: auto; /* 줄바꿈 시 하이픈 추가 (선택 사항) */
-}
-
-.c-cta_line {
-  margin-top: 0; /* 상단 간격 제거 */
-  margin-bottom: 0.5rem; /* 선 아래에 여백을 추가하고 싶다면 설정 */
-  transform: scaleX(0);
-  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
 
 .c-cta_line.-margin {
   margin-bottom: 30px;
@@ -1852,7 +1839,7 @@ html.is-ready .c-header_logo {
 }
 
 .e {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: "Playfair Display", serif;
 }
 
