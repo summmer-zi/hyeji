@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 
+/* 이메일 링크 스타일 */
+.email-link {
+  word-wrap: break-word; /* 긴 텍스트를 줄바꿈 */
+  word-break: break-word; /* 줄바꿈 기준 설정 */
+  display: inline-block; /* 블록처럼 줄바꿈 가능 */
+  text-align: left; /* 텍스트 정렬 */
+}
+
+/* 모바일 환경에서 추가 조정 */
+@media (max-width: 768px) {
+  .email-link {
+      font-size: 14px; /* 글자 크기 줄이기 */
+      line-height: 1.5; /* 줄 간격 설정 */
+      text-align: center; /* 중앙 정렬 */
+  }
+}
+
 
 a:link, a:visited {
   color: inherit; /* 기본 텍스트 색상을 유지 */
@@ -1691,24 +1708,6 @@ html.is-ready .c-header_logo {
 
 .c-cta_content_text a:hover {
   color: white;
-}
-
-
-/* 이메일 링크 스타일 */
-.email-link {
-  word-wrap: break-word; /* 긴 텍스트를 줄바꿈 */
-  word-break: break-word; /* 줄바꿈 기준 설정 */
-  display: inline-block; /* 블록처럼 줄바꿈 가능 */
-  text-align: left; /* 텍스트 정렬 */
-}
-
-/* 모바일 환경에서 추가 조정 */
-@media (max-width: 768px) {
-  .email-link {
-      font-size: 14px; /* 글자 크기 줄이기 */
-      line-height: 1.5; /* 줄 간격 설정 */
-      text-align: center; /* 중앙 정렬 */
-  }
 }
 
 
