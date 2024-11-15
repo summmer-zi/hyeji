@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 
-.email-link {
-  display: inline-block; /* 줄바꿈 가능하도록 설정 */
-  white-space: normal; /* 기본적으로 줄바꿈 허용 */
-  word-break: break-all; /* 적절한 위치에서 강제로 줄바꿈 */
-  text-align: left; /* 필요에 따라 정렬 설정 */
-}
-
-
 a:link, a:visited {
   color: inherit; /* 기본 텍스트 색상을 유지 */
   text-decoration: none; /* 밑줄을 없앰 */
@@ -1892,8 +1884,8 @@ html.is-ready .c-header_logo {
 .e a {
   display: block; /* 각 링크를 블록 요소로 변경하여 줄바꿈 처리 */
     word-break: break-all; /* 줄바꿈을 단어 중간에서도 허용 */
-    white-space: nowrap; /* 한 줄에 표시되도록 설정 */
-    overflow-wrap: anywhere; /* 공간이 부족할 경우에만 줄바꿈 허용 */
+    white-space: normal; /* 한 줄에 표시되도록 설정 */
+    overflow-wrap: break-word; /* 공간이 부족할 경우에만 줄바꿈 허용 */
   }
 
 
