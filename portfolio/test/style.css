@@ -1694,6 +1694,23 @@ html.is-ready .c-header_logo {
 }
 
 
+/* 이메일 링크 스타일 */
+.email-link {
+  word-wrap: break-word; /* 긴 텍스트를 줄바꿈 */
+  word-break: break-word; /* 줄바꿈 기준 설정 */
+  display: inline-block; /* 블록처럼 줄바꿈 가능 */
+  text-align: left; /* 텍스트 정렬 */
+}
+
+/* 모바일 환경에서 추가 조정 */
+@media (max-width: 768px) {
+  .email-link {
+      font-size: 14px; /* 글자 크기 줄이기 */
+      line-height: 1.5; /* 줄 간격 설정 */
+      text-align: center; /* 중앙 정렬 */
+  }
+}
+
 
 .u-2\:1:before {
   padding-bottom: 50%;
