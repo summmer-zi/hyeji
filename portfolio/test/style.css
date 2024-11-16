@@ -1882,12 +1882,21 @@ html.is-ready .c-header_logo {
 }
 
 .e a {
-  display: block; /* 각 링크를 블록 요소로 변경하여 줄바꿈 처리 */
-    word-break: break-all; /* 줄바꿈을 단어 중간에서도 허용 */
-    white-space: normal; /* 한 줄에 표시되도록 설정 */
-    overflow-wrap: break-word; /* 공간이 부족할 경우에만 줄바꿈 허용 */
-  }
+  display: block; /* 링크를 한 줄에 표시 */
+  white-space: nowrap; /* 줄바꿈 방지 */
+  word-break: normal; /* 단어 중간에 줄바꿈 금지 */
+  overflow-wrap: normal; /* 줄바꿈 조건 비활성화 */
+}
 
+/* 화면 크기가 작을 때만 줄바꿈 허용 */
+@media (max-width: 768px) {
+  .e a {
+    display: block; /* 각 링크를 블록 요소로 변경하여 줄바꿈 */
+    white-space: normal; /* 줄바꿈 허용 */
+    word-break: break-word; /* 단어 단위로 줄바꿈 */
+    overflow-wrap: break-word; /* 공간 부족 시 줄바꿈 */
+  }
+}
 
 
 .c-project-block_title.project-title span[data-scroll] {
