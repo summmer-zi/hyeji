@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
 
+.u-label.c-header_heading_label {
+  font-family: 'Neue Montreal Book', sans-serif; /* 폰트를 원하는 것으로 변경 */
+  font-size: 1rem; /* 폰트 크기를 필요에 맞게 설정 */
+  line-height: 1.5; /* 줄 간격 설정 */
+  color: white;
+}
+
 
 a:link, a:visited {
   color: inherit; /* 기본 텍스트 색상을 유지 */
@@ -216,7 +223,7 @@ a:active {
 
 .project-caption h3 {
   font-family: 'Neue Montreal','Inter', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 20px;
 }
