@@ -188,13 +188,6 @@ a:active {
   width: 100%;
 }
 
-.project-caption {
-  text-align: left;
-  font-size: 16px;
-  margin-top: 10px;
-  width: auto; /* 캡션의 너비를 자동으로 설정 */
-}
-
 .project-icon {
   font-size: 24px;
   text-align: right;
@@ -215,37 +208,45 @@ a:active {
 }
 
 
-
 .project-caption {
   text-align: left;
-  font-size: 16px;
   width: 800px; /* 오른쪽 큰 이미지와 동일한 너비 */
   margin-top: 20px; /* 이미지와 캡션 간 간격 추가 */
 }
 
 .project-caption h3 {
-  font-size: 18px;
-  margin-bottom: 10px; /* 제목과 설명 간의 간격 추가 */
+  font-family: 'Neue Montreal','Inter', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .project-caption p {
-  font-size: 14px;
+  font-family: 'Neue Montreal Book','Inter', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
   color: #666;
-  margin-top: 10px; /* 제목과 설명 사이에 간격 추가 */
+  margin-top: 10px; 
 }
 
-/* Storybook 섹션 스타일 */
+.c-cta_content_text h4 {
+  font-family: 'Neue Montreal Book','Inter', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+
 .storybook-section {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* 상단 정렬을 기본으로 설정 */
-  width: 100%; /* 전체 너비 사용 */
+  align-items: flex-start; 
+  width: 100%; 
   padding: 20px 0;
 }
 
 .storybook-left {
   flex: 0 0 200px;
-  align-self: flex-end; /* 왼쪽 이미지를 오른쪽 이미지의 하단에 맞추기 */
+  align-self: flex-end; 
 }
 
 .storybook-left img {
@@ -272,7 +273,7 @@ a:active {
 
 
 html {
-  line-height: 1.15;
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
 }
 body {
@@ -549,21 +550,16 @@ button:hover {
   font-family: 'Neue Montreal';
   src: url('./fonts/ppneuemontreal-medium-webfont.woff2') format('woff2'), /* 가장 최적화된 포맷 */
        url('./fonts/ppneuemontreal-medium-webfont.woff') format('woff');  /* 대체 포맷 */
-  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Montreal Book';
+  src: url('./fonts/ppneuemontreal-book-webfont.woff2') format('woff2'), /* 가장 최적화된 포맷 */
+       url('./fonts/ppneuemontreal-book-webfont.woff') format('woff');  /* 대체 포맷 */
   font-style: normal;
 }
 
-/* 본문 텍스트에 "Neue Montreal" 폰트 적용 */
-body {
-font-family: 'Neue Montreal', 'Inter', sans-serif;
-}
 
-
-html {
-  color: #222;
-  font-family: 'Neue Montreal';
-  line-height: 2;
-}
 @media (max-width: 699px) {
   html {
     font-size: 12px;
@@ -1210,13 +1206,13 @@ html.is-ready .o-layout_item:nth-child(2) .c-header_heading_label {
   }
 }
 
-@media (max-width: 699px) {
-  .c-summary_text,
-  .c-sections_infos_text p, .c-sections_infos_text u-text p,
-  .c-cta_content_text h4 {
-    font-size: 1.12rem !important; /* 필요에 따라 크기 조정 */
-    line-height: 1.5 !important; /* 가독성을 위한 줄 간격 설정 */
-  }
+
+
+.c-sections_infos_text.u-text p {
+  font-family: 'Neue Montreal Book', 'Inter', sans-serif; /* 기본 폰트와 대체 폰트 설정 */
+  font-weight: 400; /* Book 스타일 */
+  font-size: 1.125rem; /* 폰트 크기 설정 */
+  line-height: 1.5; /* 줄 간격 설정 */
 }
 
 
@@ -1272,8 +1268,8 @@ html.is-ready .c-header_logo {
   margin: 3.75rem 0 7.5rem;
 }
 .c-summary_text {
-  font-size: 1rem;
-  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-family: "Neue Montreal Book", 'Inter';
   opacity: 0;
   transform: translateY(60px);
   transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -1294,14 +1290,13 @@ html.is-ready .c-header_logo {
 }
 
 .exercise-number {
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 500;
+  font-family:  "Neue Montreal", "Inter", sans-serif;
+  font-weight: 550;
   font-size: 1.3rem;
 }
 
 .exercise-title {
-  font-family:  "Space Grotesk", sans-serif;
-  font-weight: 300;
+  font-family:  "Neue Montreal Book", "Inter", sans-serif;
   text-transform: uppercase;
   font-size: 1.3rem;
 }
@@ -1468,15 +1463,11 @@ html.is-ready .c-header_logo {
 }
 
 .c-section_infos h3.bold {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Neue Montreal","Inter", sans-serif;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 550;
 }
 
-.c-sections_infos_text p {
-  font-family: "Inter", sans-serif;
-  font-size: 1rem; 
-}
 
 .c-reading-block_item_inner:hover a {
   color: white;
