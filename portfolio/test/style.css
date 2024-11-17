@@ -546,16 +546,24 @@ button:hover {
   text-decoration: none;
 }
 @font-face {
-  font-family: Neue Montreal;
-  src: url(../fonts/NeueMontreal-Medium.woff2) format("woff2"),
-    url(../fonts/NeueMontreal-Medium.woff) format("woff");
+  font-family: 'Neue Montreal';
+   src: url('../fonts/NeueMontreal-Medium.woff2') format('woff2'),
+       url('../fonts/NeueMontreal-Medium.woff') format('woff'),
+       url('../fonts/NeueMontreal-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
+
+/* 본문 텍스트에 "Neue Montreal" 폰트 적용 */
+body {
+font-family: 'Neue Montreal', 'Inter', sans-serif;
+}
+
+
 html {
   color: #222;
-  font-family: Neue Montreal;
-  line-height: 1.5;
+  font-family: 'Neue Montreal';
+  line-height: 2;
 }
 @media (max-width: 699px) {
   html {
