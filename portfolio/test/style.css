@@ -231,7 +231,8 @@ a:active {
 
 .c-cta_content_text h4 {
   font-family: 'Neue Montreal Book','Inter', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
+  color: #666;
   line-height: 1.5;
 }
 
@@ -562,7 +563,7 @@ button:hover {
 
 @media (max-width: 699px) {
   html {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media (min-width: 700px) and (max-width: 999px) {
@@ -582,17 +583,17 @@ button:hover {
 }
 @media (min-width: 1600px) and (max-width: 1999px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media (min-width: 2000px) and (max-width: 2399px) {
   html {
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 @media (min-width: 2400px) {
   html {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 html:not(.has-scroll-init) {
@@ -1290,8 +1291,7 @@ html.is-ready .c-header_logo {
 }
 
 .exercise-number {
-  font-family:  "Neue Montreal", "Inter", sans-serif;
-  font-weight: 550;
+  font-family:  "Neue Montreal Book", "Inter", sans-serif;
   font-size: 1.3rem;
 }
 
@@ -1465,7 +1465,7 @@ html.is-ready .c-header_logo {
 .c-section_infos h3.bold {
   font-family: "Neue Montreal","Inter", sans-serif;
   font-size: 1.5rem;
-  font-weight: 550;
+  line-height: 1.5;
 }
 
 
