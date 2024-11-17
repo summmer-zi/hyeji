@@ -206,6 +206,8 @@ a:active {
 @media (max-width: 768px) {
   .project-icon {
     width: 40px; 
+    margin-left: 5px;
+    height: auto;
   }
 }
 
