@@ -216,14 +216,14 @@ a:active {
 
 .project-caption h3 {
   font-family: 'Neue Montreal','Inter', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .project-caption p {
   font-family: 'Neue Montreal Book','Inter', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.12rem;
   line-height: 1.5;
   color: #666;
   margin-top: 10px; 
@@ -274,7 +274,7 @@ a:active {
 
 
 html {
-  line-height: 1.5;
+  line-height: 2;
   -webkit-text-size-adjust: 100%;
 }
 body {
@@ -552,6 +552,7 @@ button:hover {
   src: url('./fonts/ppneuemontreal-medium-webfont.woff2') format('woff2'), /* 가장 최적화된 포맷 */
        url('./fonts/ppneuemontreal-medium-webfont.woff') format('woff');  /* 대체 포맷 */
   font-style: normal;
+  font-weight: 450;
 }
 @font-face {
   font-family: 'Neue Montreal Book';
@@ -588,12 +589,12 @@ button:hover {
 }
 @media (min-width: 2000px) and (max-width: 2399px) {
   html {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 @media (min-width: 2400px) {
   html {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 html:not(.has-scroll-init) {
