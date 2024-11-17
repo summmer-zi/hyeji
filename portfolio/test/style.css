@@ -202,6 +202,20 @@ a:active {
   margin-left: 40px;
 }
 
+
+@media (max-width: 768px) {
+  .project-icon {
+    width: 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .project-icon {
+    width: 28px; 
+  }
+}
+
+
 .logo {
   width: 28px; /* 이미지 너비 설정 */
   height: auto; /* 높이를 비율에 맞게 자동 조정 */
