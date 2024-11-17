@@ -196,10 +196,18 @@ a:active {
 }
 
 .project-icon {
-  font-size: 24px;
+  width: 24px;
   text-align: right;
-  margin-left: auto; /* 아이콘을 오른쪽으로 정렬 */
+  height: auto;
+  margin-left: 40px;
 }
+
+.logo {
+  width: 28px; /* 이미지 너비 설정 */
+  height: auto; /* 높이를 비율에 맞게 자동 조정 */
+}
+
+
 
 /* 모바일에서 이미지가 전체 너비를 차지하도록 조정 */
 @media (max-width: 768px) {
@@ -558,7 +566,7 @@ button:hover {
   font-family: 'Neue Montreal';
   src: url('./fonts/ppneuemontreal-medium-webfont.woff2') format('woff2'), /* 가장 최적화된 포맷 */
        url('./fonts/ppneuemontreal-medium-webfont.woff') format('woff');  /* 대체 포맷 */
-  font-style: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: 'Neue Montreal Book';
@@ -1297,7 +1305,7 @@ html.is-ready .c-header_logo {
   }
 }
 
-.exercise-number {
+.c-summary_list_icon.u-icon {
   font-family:  "Neue Montreal Book", "Inter", sans-serif;
   font-size: 1.3rem;
 }
