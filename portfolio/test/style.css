@@ -186,32 +186,36 @@ a:active {
 .storybook-image-container:hover::before, .poster-image-container:hover::before, .interaction-image-container:hover::before {
   background-color: rgba(255, 255, 255, 0.3);
 }
-
-/* 캡션과 아이콘 스타일 */
 .project-caption-container {
   display: flex;
-  justify-content: space-between; /* 왼쪽에 캡션, 오른쪽에 아이콘 */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: none; /* 크기 제한 해제 */
 }
 
+/* 캡션 */
+.project-caption {
+  text-align: left;
+  flex: 1; /* 캡션이 가능한 공간을 차지 */
+  max-width: 800px;
+  margin-top: 0; /* 추가 여백 제거 */
+}
+
+/* 아이콘 */
 .project-icon {
-  width: 24px;
-  text-align: right;
-  height: auto;
-  margin-left: 40px;
+  width: 24px; /* 아이콘 크기 */
+  height: auto; /* 비율 유지 */
+  margin-left: 20px;
 }
 
-
+/* 모바일 대응 */
 @media (max-width: 768px) {
   .project-icon {
-    width: 40px; 
-    margin-left: 5px;
-    height: auto;
+    width: 20px; /* 모바일에서 아이콘 크기 줄임 */
+    margin-left: 10px;
   }
 }
-
-
 
 .logo {
   width: 28px; /* 이미지 너비 설정 */
