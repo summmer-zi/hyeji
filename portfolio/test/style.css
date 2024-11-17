@@ -205,15 +205,10 @@ a:active {
 
 @media (max-width: 768px) {
   .project-icon {
-    width: 30px; 
+    width: 40px; 
   }
 }
 
-@media (max-width: 480px) {
-  .project-icon {
-    width: 28px; 
-  }
-}
 
 
 .logo {
