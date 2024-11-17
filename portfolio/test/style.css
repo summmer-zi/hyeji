@@ -547,10 +547,9 @@ button:hover {
 }
 @font-face {
   font-family: 'Neue Montreal';
-   src: url('../fonts/NeueMontreal-Medium.woff2') format('woff2'),
-       url('../fonts/NeueMontreal-Medium.woff') format('woff'),
-       url('../fonts/NeueMontreal-Medium.ttf') format('truetype');
-  font-weight: 500;
+  src: url('./fonts/ppneuemontreal-medium-webfont.woff2') format('woff2'), /* 가장 최적화된 포맷 */
+       url('./fonts/ppneuemontreal-medium-webfont.woff') format('woff');  /* 대체 포맷 */
+  font-weight: 500; /* Medium */
   font-style: normal;
 }
 
